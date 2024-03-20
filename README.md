@@ -38,7 +38,7 @@ A aplicacao foi desenvolvida em Java 17 utilizando o framework Spring Boot 3.2.2
 
 ## End Points
 
-Para acessar os endPoints da aplicação, [clique aqui](./postman/postman-collection.json) e faça o download do arquivo.<br>
+Para acessar os endPoints da aplicação, [clique aqui](./postman/NLW_Expert_Java.postman_collection.json) e faça o download do arquivo.<br>
 Utilize a ferramenta de gerenciamento de API´s da sua preferencia. Para este projeto, utilizei o Postman.
 
 
