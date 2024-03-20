@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "cdc29a09-7e13-46e3-b759-236e3c3f0996",
+		"name": "NLW_Expert_Java",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10069660"
+	},
+	"item": [
+		{
+			"name": "Students",
+			"item": [
+				{
+					"name": "verifyIfHasCertification",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"email@com.br\",\r\n    \"technology\": \"JAVA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/students/verifyIfHasCertification",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"students",
+								"verifyIfHasCertification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "certificationAnswer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"ultimo@com.br\",\r\n    \"technology\": \"JAVA\",\r\n    \"questionAnswer\": [\r\n        {\r\n            \"questionID\": \"c5f02721-6dc3-4fa6-b46d-6f2e8dca9c66\",\r\n            \"alternativeID\": \"bafdf631-6edf-482a-bda9-7dce1efb1890\"\r\n        },\r\n        {\r\n            \"questionID\": \"b0ec9e6b-721c-43c7-9432-4d0b6eb15b01\",\r\n            \"alternativeID\": \"9da03a4e-3c8d-4a32-87e1-9898938435c2\"\r\n        },\r\n        {\r\n            \"questionID\": \"f85e9434-1711-4e02-9f9e-7831aa5c743a\",\r\n            \"alternativeID\": \"d3e51a56-9b97-4bb8-9827-8bcf89f4b276\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/students/certification/answer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"students",
+								"certification",
+								"answer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Questions",
+			"item": [
+				{
+					"name": "Questões por Tecnologia",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"email@com.br\",\r\n    \"technology\": \"Java\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/questions/technology/JAVA",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"questions",
+								"technology",
+								"JAVA"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Certifications",
+			"item": [
+				{
+					"name": "Questões por Tecnologia Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"email@com.br\",\r\n    \"technology\": \"Java\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/ranking/top10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"ranking",
+								"top10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
